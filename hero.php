@@ -4,6 +4,8 @@ Template Name: Hero
 */
 get_header(); ?>
 
+<!--homepage for tsa-->
+
 <header id="homepage-hero" role="banner">
 	<div class="row">
 		<div class="small-12 medium-7 columns">
