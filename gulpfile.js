@@ -39,5 +39,5 @@ gulp.task('watch', function() {
     gulp.watch('js/*.js', ['jshint']);
 });
 
-compiles SASS to CSS, combine all CSS into one file, add vendor prefixes, check .js files for errors, watch source files for changes
+// compiles SASS to CSS, combine all CSS into one file, add vendor prefixes, check .js files for errors, watch source files for changes
 gulp.task('default', ['styles', 'jshint', 'watch']);
