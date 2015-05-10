@@ -1,6 +1,39 @@
 <?php get_header(); ?>
 <div class="row">
-	<div class="small-12 large-8 columns" role="main">
+	<div class="small-12 columns" role="main">
+
+<?php
+        $pages = get_pages('include=5,2,12');
+
+        $count = 0;
+
+        foreach($pages as $page)
+
+        {
+    ?>
+
+
+        <div class="">
+
+            <h2>
+            	<?php echo $page->post_title ?>
+            </h2>
+
+            <div>
+            	<p>
+            		<?php echo $page->post_content ?>
+            	</p>
+            </div>
+
+        </div> <!-- end inner -->
+   <?php } ?>
+
+	
+
+
+
+
+
 
 	<?php if ( have_posts() ) : ?>
 
@@ -26,10 +59,22 @@
 		</nav>
 	<?php } ?>
 
+
+
+
+
 	<?php do_action( 'foundationpress_after_content' ); ?>
 
         
 	</div>
-	<?php get_sidebar(); ?>
+
 </div>
+
+
+
+
+
+
+
+
 <?php get_footer(); ?>
