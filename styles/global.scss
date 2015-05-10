@@ -1,7 +1,80 @@
 
 @import 'settings';
 
+
+
+
+/*--------------------------------------------------------------
+# Site Settings
+--------------------------------------------------------------*/
 body{
-	background-color: #f4f4f4;
+	background-color: $white;
+	color: $body-text-color;
  
 }
+
+h1, h2, h3{
+	color: $blue;
+} 
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+header{
+
+	nav{
+		line-height: 70px;
+
+
+		a:link, a:visited{
+			color: $white;
+		}
+		a:hover{
+			color: $red;
+		}
+		.sub-menu{
+			a:link, a:visited{
+				color: $blue;
+			}
+		}
+	}
+
+	.site-branding{
+		.site-title{
+			float: left;
+			margin-top: -46px;
+
+		}
+	}
+}
+
+.header{
+		background-color: $blue;
+		box-shadow: 1px 1px 1px #888888;
+		height: 60px;
+
+
+		img{
+			max-width: 172px;
+			height: auto;
+			position: relative;
+  			padding: 12px;
+		}
+
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/

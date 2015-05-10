@@ -1,2 +1,42 @@
+/*--------------------------------------------------------------
+# Site Settings
+--------------------------------------------------------------*/
 body {
-  background-color: #f4f4f4; }
+  background-color: #fbf5f3;
+  color: #484a47; }
+
+h1, h2, h3 {
+  color: #00457c; }
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+header nav {
+  line-height: 70px; }
+  header nav a:link, header nav a:visited {
+    color: #fbf5f3; }
+  header nav a:hover {
+    color: #bc0726; }
+  header nav .sub-menu a:link, header nav .sub-menu a:visited {
+    color: #00457c; }
+
+header .site-branding .site-title {
+  float: left;
+  margin-top: -46px; }
+
+.header {
+  background-color: #00457c;
+  box-shadow: 1px 1px 1px #888888;
+  height: 60px; }
+  .header img {
+    max-width: 172px;
+    height: auto;
+    position: relative;
+    padding: 12px; }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
