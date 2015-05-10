@@ -1,15 +1,25 @@
-</section>
-<footer class="row">
-	<?php do_action( 'foundationpress_before_footer' ); ?>
-	<?php dynamic_sidebar( 'footer-widgets' ); ?>
-	<?php do_action( 'foundationpress_after_footer' ); ?>
-</footer>
-<a class="exit-off-canvas"></a>
+<?php
+/**
+ * The template for displaying the footer.
+ *
+ * Contains the closing of the #content div and all content after
+ *
+ * @package nctsa
+ */
+?>
 
-	<?php do_action( 'foundationpress_layout_end' ); ?>
-	</div>
-</div>
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'nctsa' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'nctsa' ), 'WordPress' ); ?></a>
+			<span class="sep"> | </span>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'nctsa' ), 'nctsa', '<a href="http://brandonfryedesign.com" rel="designer">Brandon Frye</a>' ); ?>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
 <?php wp_footer(); ?>
-<?php do_action( 'foundationpress_before_closing_body' ); ?>
+
 </body>
 </html>
