@@ -1,0 +1,27 @@
+{
+  "name": "NCTSA",
+  "version": "1.0.0",
+  "description": "NCTSA WP theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bkfrye/NCTSA.git"
+  },
+  "author": "Brandon Frye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bkfrye/NCTSA/issues"
+  },
+  "homepage": "https://github.com/bkfrye/NCTSA",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.2.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-jshint": "^1.10.0",
+    "gulp-sass": "^2.0.0",
+    "jshint-stylish": "^1.0.2"
+  }
+}
