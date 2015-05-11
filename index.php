@@ -18,38 +18,27 @@ get_header(); ?>
 				<div id="primary" class="content-area">
 					<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+<!-- wordpress loop -->
+						<?php if ( have_posts() ) : ?>
 
-				<?php
-					get_template_part( 'template-parts/content', get_post_format() );
-				?>
+							<?php /* Start the Loop */ ?>
+							<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php endwhile; ?>
+								<?php
+									get_template_part( 'template-parts/content', get_post_format() );
+								?>
 
-			<?php the_posts_navigation(); ?>
+							<?php endwhile; ?>
 
-		<?php else : ?>
+							<?php the_posts_navigation(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+						<?php else : ?>
 
-		<?php endif; ?>
+							<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+						<?php endif; ?>
+<!-- wordpress loop ends -->
 
 						
 						<section class="about-home">
