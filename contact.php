@@ -9,7 +9,7 @@ Template Name: Contact
  	<section class="contact">
 		<div class="row">
 			<div class="small-12 large-12 columns" role="main">
-
+				<h2>Contact Us</h2>
 				<form id="contact-form" method="post" action="" accept-charset="UTF-8">
 				    <input type="hidden" name="action" value="contactForm/sendMessage">
 				    <input type="hidden" name="redirect" value="">
