@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Newsletter
+Template Name: Home-About
 */
  ?>
 		

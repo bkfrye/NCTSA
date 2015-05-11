@@ -12,6 +12,10 @@ body{
 	background-color: $white;
 	color: $body-text-color;
 
+	.custom-background{
+		background: no-repeat center center fixed; 
+		background-size: cover;
+	}
  
 }
 
@@ -190,17 +194,21 @@ header{
 
 
 
-	.widget-title{
-		font-size:1.2em;
-
-	}
+.widget-title{
+	font-size:1.2em;
+}
 
 
 
 section{
 	min-height: 300px;
 	padding: 22px 0px 22px 0px;
-	// background-color: $blue;
+}
+
+.announcements{
+	border:1px solid $border-color;
+	margin: 12px 0px 12px 0px;
+
 }
 
 .about-home{
@@ -208,8 +216,8 @@ section{
 	color: $white;
 	width: 100%;
 }
-.newsletter{
-	background-color: $white;
+.officer-home{
+	background: $white;
 	color:  $black;
 	width: 100%;
 

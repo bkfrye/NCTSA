@@ -3,7 +3,7 @@
 /*
 Template Name: Contact
 */
- ?>
+ get_header();?>
 
 
  	<section class="contact">
@@ -24,12 +24,12 @@ Template Name: Contact
 				    
 				    <textarea rows="10" cols="40" id="message" name="message[body]" placeholder="MESSAGE"></textarea>
 
-
+				
 				    <input type="submit" class="button" value="Send">
 				</form>
 
 			</div>
 		</div>
 	</section>
-
+<?php get_footer(); ?>
 	

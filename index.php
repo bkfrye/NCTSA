@@ -21,7 +21,7 @@ get_header(); ?>
 
 <!-- wordpress loop -->
 				<div class="row">
-					<div class="small-12 medium-8 columns">
+					<div class="small-12 medium-8 announcements columns">
 						<?php if ( have_posts() ) : ?>
 
 							<?php /* Start the Loop */ ?>
@@ -65,7 +65,7 @@ get_header(); ?>
 						        {
 						    ?>
 							<div class="row">
-								<div class="small-12 large-10 small-centered columns" role="main">
+								<div class="small-12 small-centered columns" role="main">
 						            <section>
 							            	<p>
 							            		<?php echo apply_filters( 'the_content', $page->post_content ); ?>
@@ -79,7 +79,10 @@ get_header(); ?>
 						   <?php } ?>
 						</section>
 
-						<section class="newsletter">
+
+
+
+						<section class="officers-home">
 
 
 						   <?php
@@ -94,7 +97,7 @@ get_header(); ?>
 
 
 							<div class="row">
-								<div class="small-12 large-10 small-centered columns" role="main">
+								<div class="small-12 small-centered columns" role="main">
 						            <section>
 
 							            	<p>
@@ -103,10 +106,11 @@ get_header(); ?>
 						            </section>
 						        </div>
 						    </div>
+						    <?php } ?>
 						</section>
 
 						         
-						   <?php } ?>
+						   
 
 
 					</main><!-- #main -->

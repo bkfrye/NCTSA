@@ -5,6 +5,9 @@
 body {
   background-color: #fbf5f3;
   color: #484a47; }
+  body .custom-background {
+    background: no-repeat center center fixed;
+    background-size: cover; }
 
 h1, h2, h3, h4, p {
   font-family: Lato, sans-serif; }
@@ -121,13 +124,17 @@ section {
   min-height: 300px;
   padding: 22px 0px 22px 0px; }
 
+.announcements {
+  border: 1px solid #7e7e7e;
+  margin: 12px 0px 12px 0px; }
+
 .about-home {
   background-color: #00457c;
   color: #fbf5f3;
   width: 100%; }
 
-.newsletter {
-  background-color: #fbf5f3;
+.officer-home {
+  background: #fbf5f3;
   color: #484a47;
   width: 100%; }
 
