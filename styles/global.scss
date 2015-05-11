@@ -11,12 +11,6 @@
 body{
 	background-color: $white;
 	color: $body-text-color;
-
-	.custom-background{
-		background: no-repeat center center fixed; 
-		background-size: cover;
-	}
- 
 }
 
 h1, h2, h3, h4, p{
@@ -192,6 +186,11 @@ header{
 # Home Sections
 --------------------------------------------------------------*/
 
+.hero{
+	background: url(http://localhost:8888/nctsa/wp-content/uploads/2015/05/placeholder.jpg) no-repeat center center fixed; 
+ 	background-size: cover;
+ 	height: 420px;
+}
 
 
 .widget-title{
@@ -208,6 +207,7 @@ section{
 .announcements{
 	border:1px solid $border-color;
 	margin: 12px 0px 12px 0px;
+	padding: 0px 22px 0px 22px;
 
 }
 
