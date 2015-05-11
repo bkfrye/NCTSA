@@ -117,10 +117,46 @@ header .site-branding .site-title {
 section {
   min-height: 300px; }
 
-.newsletter {
+.about-home {
   background-color: #00457c;
   color: #fbf5f3;
   width: 100%; }
+
+.newsletter {
+  background-color: #fbf5f3;
+  color: #484a47;
+  width: 100%; }
+
+/*--------------------------------------------------------------
+# Team Members 
+--------------------------------------------------------------*/
+.tmm_member .tmm_textblock {
+  padding: 0; }
+
+@media only screen and (min-width: 40.043em) {
+  .tmm_3_columns .tmm_member {
+    width: 27%;
+    margin-right: 3%;
+    margin-left: 3%; } }
+
+.tmm_member .tmm_photo {
+  border: none;
+  border-radius: 50% !important; }
+
+.tmm_names {
+  color: #484a47; }
+
+.tmm_desc {
+  display: none; }
+
+.tmm_scblock {
+  margin: 0; }
+
+.tmm_member .tmm_textblock .tmm_sociallink img {
+  width: 54px;
+  height: 54px;
+  margin: 0;
+  padding: 0; }
 
 /*--------------------------------------------------------------
 # Footer

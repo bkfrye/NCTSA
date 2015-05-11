@@ -101,7 +101,6 @@ header{
 	position: relative;
 	line-height: 60px;
 	padding: 0 10px 0 10px;
-	
 }
 
 .main-navigation a {
@@ -195,12 +194,65 @@ section{
 
 
 }
-.newsletter{
-		background-color: $blue;
-		color:  $white;
-		width: 100%;
-	}
 
+.about-home{
+	background-color: $blue;
+	color: $white;
+	width: 100%;
+}
+.newsletter{
+	background-color: $white;
+	color:  $black;
+	width: 100%;
+
+	h1{
+		
+	}
+}
+
+
+/*--------------------------------------------------------------
+# Team Members 
+--------------------------------------------------------------*/
+.tmm_member
+
+
+// .tmm_member .tmm_textblock{
+// 	padding: 0;
+// }
+
+@media only screen and (min-width: 40.043em){
+	.tmm_3_columns .tmm_member{
+		width: 27%;
+		margin-right: 3%;
+		margin-left: 3%;
+	}
+}
+
+.tmm_member .tmm_photo{
+	border: none;
+	border-radius: 50% !important;
+}
+
+.tmm_names{
+	color: $black;
+
+}
+
+.tmm_desc{
+	display: none;
+}
+
+.tmm_scblock{
+	margin: 0;
+}
+
+.tmm_member .tmm_textblock .tmm_sociallink img{
+	width:54px;
+	height:54px;
+	margin: 0;
+	padding:0;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

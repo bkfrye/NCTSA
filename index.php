@@ -20,6 +20,8 @@ get_header(); ?>
 
 
 <!-- wordpress loop -->
+				<div class="row">
+					<div class="small-12 medium-8 columns">
 						<?php if ( have_posts() ) : ?>
 
 							<?php /* Start the Loop */ ?>
@@ -38,6 +40,17 @@ get_header(); ?>
 							<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 						<?php endif; ?>
+
+					</div>
+
+					<div class="small-10 medium-4 columns">
+						<?php get_sidebar(); ?>
+					</div>
+
+
+
+
+				</div>
 <!-- wordpress loop ends -->
 
 						
@@ -55,7 +68,8 @@ get_header(); ?>
 								<div class="small-12 large-10 small-centered columns" role="main">
 						            <section>
 							            	<p>
-							            		<?php echo $page->post_content ?>
+							            		<?php echo apply_filters( 'the_content', $page->post_content ); ?>
+
 							            	</p>
 						            </section>
 						        </div>
@@ -82,9 +96,10 @@ get_header(); ?>
 							<div class="row">
 								<div class="small-12 large-10 small-centered columns" role="main">
 						            <section>
+						            	<h1><?php echo apply_filters('the_title', $page->post_title);?></h1>
 							            	<p>
-							            		<?php echo $page->post_content ?>
-							            	</p>
+												<?php echo apply_filters( 'the_content', $page->post_content );?>
+											</p>
 						            </section>
 						        </div>
 						    </div>
@@ -107,7 +122,6 @@ get_header(); ?>
 <div class="footer-contact">
 	<div class="row">
 		<div class="small-12 columns">
-		
 			<?php get_template_part( 'contact'); ?>
 		</div>
 	</div>
