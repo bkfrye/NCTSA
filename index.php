@@ -96,7 +96,7 @@ get_header(); ?>
 							<div class="row">
 								<div class="small-12 large-10 small-centered columns" role="main">
 						            <section>
-						            	<h1><?php echo apply_filters('the_title', $page->post_title);?></h1>
+
 							            	<p>
 												<?php echo apply_filters( 'the_content', $page->post_content );?>
 											</p>

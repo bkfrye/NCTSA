@@ -114,8 +114,12 @@ header .site-branding .site-title {
 /*--------------------------------------------------------------
 # Home Sections
 --------------------------------------------------------------*/
+.widget-title {
+  font-size: 1.2em; }
+
 section {
-  min-height: 300px; }
+  min-height: 300px;
+  padding: 22px 0px 22px 0px; }
 
 .about-home {
   background-color: #00457c;
@@ -130,8 +134,13 @@ section {
 /*--------------------------------------------------------------
 # Team Members 
 --------------------------------------------------------------*/
-.tmm_member .tmm_textblock {
-  padding: 0; }
+.tmm_member {
+  background-color: #00457c;
+  border-top: 3px solid #bc0726;
+  border-bottom: 0px; }
+  .tmm_member .tmm_names {
+    color: white;
+    font-size: 1.2em; }
 
 @media only screen and (min-width: 40.043em) {
   .tmm_3_columns .tmm_member {
@@ -153,8 +162,8 @@ section {
   margin: 0; }
 
 .tmm_member .tmm_textblock .tmm_sociallink img {
-  width: 54px;
-  height: 54px;
+  width: 38px;
+  height: auto;
   margin: 0;
   padding: 0; }
 
@@ -169,3 +178,69 @@ section {
   padding-top: 44px; }
   .footer-contact h2 {
     color: #fbf5f3; }
+
+form {
+  margin: 20px auto;
+  width: 760px; }
+  form input,
+  form textarea {
+    z-index: 1;
+    position: relative;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    display: block;
+    float: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    text-align: left;
+    width: 220px; }
+  form input.wide,
+  form textarea {
+    width: 725px; }
+  form textarea {
+    padding-top: 20px;
+    height: 100px; }
+  form ::-webkit-input-placeholder {
+    color: #fbf5f3; }
+  form :-moz-placeholder {
+    /* Firefox 18- */
+    color: #fbf5f3; }
+  form ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fbf5f3; }
+  form :-ms-input-placeholder {
+    color: #fbf5f3; }
+  form .button, form a.button {
+    border: 1px solid #fbf5f3;
+    border-radius: 4px;
+    color: #fbf5f3;
+    font: 16px/16px "Lato", sans-serif;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 18px 40px;
+    width: auto; }
+  form .button:hover,
+  form a.button:hover {
+    background-color: #fbf5f3;
+    border-color: #fbf5f3;
+    color: #00457c;
+    opacity: 1.0; }
+  form .button {
+    float: none;
+    font-size: 14px;
+    padding: 0 18px; }
+  form .button {
+    float: left; }
+  form a.button, form .button {
+    color: #fbf5f3;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #fbf5f3; }
