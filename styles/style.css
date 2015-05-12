@@ -20,8 +20,6 @@ p {
 --------------------------------------------------------------*/
 header nav {
   line-height: 70px; }
-  header nav li ul {
-    z-index: 1; }
   header nav a:link, header nav a:visited {
     color: #fbf5f3; }
   header nav li:hover {
@@ -39,7 +37,8 @@ header .site-branding .site-title {
   background-color: #00457c;
   box-shadow: 1px 1px 1px #888888;
   height: 60px;
-  z-index: 99999999; }
+  z-index: 20;
+  position: relative; }
   .header img {
     max-width: 172px;
     height: auto;
@@ -54,43 +53,39 @@ header .site-branding .site-title {
   display: block;
   float: right;
   position: relative;
-  z-index: 500; }
-  .main-navigation ul {
-    list-style: none;
-    margin: 0;
-    -webkit-transition: all 0.2ms ease;
-            transition: all 0.2ms ease; }
+  z-index: 20; }
   .main-navigation li {
     display: inline-block;
     position: relative;
     line-height: 60px;
-    padding: 0 10px 0 10px; }
+    padding: 0 10px 0 10px;
+    z-index: 50; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
-  .main-navigation ul ul {
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: -9999px;
-    opacity: 0;
-    background-color: #fbf5f3;
-    -webkit-transition: all 440ms ease;
-            transition: all 440ms ease; }
   .main-navigation ul ul a {
     width: 212px;
     display: block;
     padding-left: 16px; }
+  .main-navigation ul ul a:hover,
+  .main-navigation ul ul a.focus {
+    -webkit-transition: all 2ms ease;
+            transition: all 2ms ease;
+    color: #fbf5f3; }
+  .main-navigation ul li:hover > ul,
+  .main-navigation ul li.focus > ul {
+    top: 60px;
+    opacity: 1; }
 
-.main-navigation ul ul a:hover,
-.main-navigation ul ul a.focus {
-  -webkit-transition: all 2ms ease;
-          transition: all 2ms ease;
-  color: #fbf5f3; }
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-  top: 60px;
-  opacity: 1; }
+.sub-menu {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: -9999px;
+  opacity: 0;
+  background-color: #fbf5f3;
+  -webkit-transition: all 440ms ease;
+          transition: all 440ms ease;
+  z-index: 0; }
 
 /* Small menu. */
 .menu-toggle,

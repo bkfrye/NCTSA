@@ -29,10 +29,6 @@ h1, h2, h3, h4{
 
 
 
-
-
-
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -40,11 +36,6 @@ header{
 	
 	nav{
 		line-height: 70px;
-
-		li ul{
-
-			z-index: 1;
-		}
 
 		a:link, a:visited{
 			color: $white;
@@ -75,7 +66,9 @@ header{
 		background-color: $blue;
 		box-shadow: 1px 1px 1px #888888;
 		height: 60px;
-		z-index: 99999999;
+		z-index: 20;
+		position: relative;
+
 
 
 		img{
@@ -96,71 +89,60 @@ header{
 	display: block;
 	float: right;
 	position: relative;
-	z-index: 500;
+	z-index: 20;
 
-	ul {
-		list-style: none;
-		margin: 0;
-		transition: all .200ms ease;
-
-	}
+	// ul {
+	// 	list-style: none;
+	// 	margin: 0;
+	// 	transition: all .200ms ease;
+	// }
 
 	li {
 		display: inline-block;
 		position: relative;
 		line-height: 60px;
 		padding: 0 10px 0 10px;
+		z-index: 50;
 	}
 
 	a {
 		display: block;
 		text-decoration: none;
-
-	}
-
-	ul ul {
-		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-		position: absolute;
-		// transform: translateY(-200%);
-		top: -9999px;
-		opacity: 0;
-		background-color: $white;
-		transition: all 440ms ease;
-
 	}
 
 
 	ul ul a {
 		width: 212px;
-		display:block;
+		display: block;
 		padding-left: 16px;
 	}
 
+	ul ul a:hover,
+	ul ul a.focus {
+		transition: all 2ms ease;
+		color: $white;
+	}
 
-
-}
-
-
-.main-navigation ul ul a:hover,
-.main-navigation ul ul a.focus {
-	transition: all 2ms ease;
-	color: $white;
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+    ul li:hover > ul,
+	ul li.focus > ul {
 	// transform:translateY(0%);
-	top: 60px;
-	opacity: 1;
+		top: 60px;
+		opacity: 1;
+	}
 
 }
 
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-
-
+.sub-menu {
+	//transform: translate3d(0px, 0px, 0px);
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	position: absolute;
+	// transform: translateY(-200%);
+	top: -9999px;
+	opacity: 0;
+	background-color: $white;
+	transition: all 440ms ease;
+	z-index: 0;
 }
-
 
 
 /* Small menu. */

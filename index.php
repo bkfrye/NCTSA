@@ -126,7 +126,7 @@ get_header(); ?>
 <div class="footer-contact">
 	<div class="row">
 		<div class="small-12 columns">
-			<?php get_template_part( 'contact'); ?>
+			<?php get_template_part( 'contact-footer'); ?>
 		</div>
 	</div>
 </div>
