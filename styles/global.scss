@@ -1,9 +1,6 @@
 
 @import 'settings';
 
-
-
-
 /*--------------------------------------------------------------
 # Site Settings
 --------------------------------------------------------------*/
@@ -22,7 +19,11 @@ p{
 
 
 h1, h2, h3, h4{
-	color: $blue;
+	// color: $blue;
+}
+
+.comments-link{
+	display: none;
 }
 
 
@@ -36,9 +37,14 @@ h1, h2, h3, h4{
 # Header
 --------------------------------------------------------------*/
 header{ 
-
+	
 	nav{
 		line-height: 70px;
+
+		li ul{
+
+			z-index: 1;
+		}
 
 		a:link, a:visited{
 			color: $white;
@@ -49,6 +55,7 @@ header{
 
 		}
 		.sub-menu{
+
 			a:link, a:visited{
 				color: $blue;
 			}
@@ -68,6 +75,7 @@ header{
 		background-color: $blue;
 		box-shadow: 1px 1px 1px #888888;
 		height: 60px;
+		z-index: 99999999;
 
 
 		img{
@@ -88,6 +96,7 @@ header{
 	display: block;
 	float: right;
 	position: relative;
+	z-index: 500;
 
 	ul {
 		list-style: none;
@@ -101,7 +110,6 @@ header{
 		position: relative;
 		line-height: 60px;
 		padding: 0 10px 0 10px;
-
 	}
 
 	a {
@@ -112,12 +120,12 @@ header{
 
 	ul ul {
 		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-		float: left;
 		position: absolute;
-		transform: translateY(-500%);
-		z-index: 99999;
+		// transform: translateY(-200%);
+		top: -9999px;
+		opacity: 0;
 		background-color: $white;
-		transition: all .200ms ease;
+		transition: all 440ms ease;
 
 	}
 
@@ -128,24 +136,10 @@ header{
 		padding-left: 16px;
 	}
 
-	ul ul li {
-		margin: 0;
-		padding: 0;
-	}
+
 
 }
 
-
-.main-navigation li:hover > a,
-.main-navigation li.focus > a {
-	// background: $blue;
-
-}
-
-.main-navigation ul ul:hover > a,
-.main-navigation ul ul.focus > a {
-
-}
 
 .main-navigation ul ul a:hover,
 .main-navigation ul ul a.focus {
@@ -155,14 +149,16 @@ header{
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
-	transform: translateY(0%);
+	// transform:translateY(0%);
+	top: 60px;
+	opacity: 1;
 
 }
 
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
-	transform: translateY(0%);
-	transition: all .2ms ease;
+
+
 }
 
 
@@ -200,6 +196,10 @@ header{
 section{
 	min-height: 300px;
 	padding: 22px 0px 22px 0px;
+
+	.about-home h1, .about-home h2, .about-home h3{
+		color: $white;
+	}
 }
 
 .announcements{
@@ -214,6 +214,8 @@ section{
 	color: $white;
 	width: 100%;
 }
+
+
 .officer-home{
 	background: $white;
 	color:  $black;
@@ -235,14 +237,10 @@ section{
 
 	.tmm_names{
 		color:white;
-		font-size: 1.2em;
+		// font-size: 1.2em;
 	}
 }
 
-
-// .tmm_member .tmm_textblock{
-// 	padding: 0;
-// }
 
 @media only screen and (min-width: 40.043em){
 	.tmm_3_columns .tmm_member{
@@ -307,8 +305,8 @@ form{
 		z-index: 1;
 		position: relative;
 		background: transparent;
-		border: 1px solid #fff;
-		color: #fff;
+		border: 1px solid $white;
+		color: $white;
 		display: block;
 		float: left;
 		font-family: 'Lato', sans-serif;
@@ -386,4 +384,97 @@ form{
 			border-radius: 4px;
 			border: 1px solid $white;
 		}
+}
+
+.contact-page{
+	form{ 
+		margin: 20px auto;
+		width: 760px; 
+
+
+		input,
+		textarea{
+			z-index: 1;
+			position: relative;
+			background: transparent;
+			border: 1px solid $blue;
+			color: $blue;
+			display: block;
+			float: left;
+			font-family: 'Lato', sans-serif;
+			font-size: 14px;
+			font-weight: 100;
+			letter-spacing: 4px;
+			height: 50px;
+			margin-bottom: 20px;
+			margin-right: 20px;
+			padding-left: 10px;
+			text-align: left;
+			width: 220px;
+		}
+		
+		input.wide,
+		textarea{
+			width: 725px;
+		}
+		
+		textarea{
+			padding-top: 20px;
+			height: 300px;
+		}
+		
+		 
+		
+		::-webkit-input-placeholder {
+	   		color: $blue;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+		   	color: $blue;  
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+		   	color: $blue;  
+		}
+
+		:-ms-input-placeholder {  
+		   	color: $blue;  
+		}
+		
+		.button, a.button{
+
+			border: 1px solid $blue;
+			border-radius: 4px;
+			color: $blue;
+			font: 16px/16px 'Lato', sans-serif;
+			font-weight: 300;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			padding: 18px 40px;
+			width: auto;
+		}
+
+			.button:hover,
+			a.button:hover{
+				background-color: $blue;
+				border-color: $blue;
+				color: $white;
+				opacity: 1.0;
+			}
+			
+			.button{ 
+				float: none;
+				font-size: 14px;
+				padding: 0 18px; 
+			}
+			
+			.button{ float: left; }
+			
+			a.button, .button{ 
+				color: $blue;
+				text-decoration: none;
+				border-radius: 4px;
+				border: 1px solid $blue;
+			}
+	}
 }

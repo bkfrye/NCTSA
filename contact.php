@@ -6,7 +6,7 @@ Template Name: Contact
  get_header();?>
 
 
- 	<section class="contact">
+ 	<section class="contact-page">
 		<div class="row">
 			<div class="small-12 large-12 columns" role="main">
 				<h2>Contact Us</h2>
