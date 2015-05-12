@@ -16,7 +16,7 @@ var gulp = require('gulp'),
       'sourcemap=none': true
     }))
     .pipe(concat('style.css'))
-    .pipe(autoprefixer('last 2 version > 5%', 'ie 8', 'ie 9'))
+    .pipe(autoprefixer('>1%', 'last 2 versions', 'Firefox', 'ie 8', 'ie 9'))
     .pipe(gulp.dest('styles/'))
 });
 
