@@ -25,7 +25,7 @@ header nav {
   header nav a:link, header nav a:visited {
     color: #fbf5f3; }
   header nav li:hover {
-    background-color: #bc0726;
+    background-color: #bc2640;
     -webkit-transition: all 200ms ease-in;
             transition: all 200ms ease-in; }
   header nav .sub-menu a:link, header nav .sub-menu a:visited {
@@ -138,7 +138,7 @@ section {
 --------------------------------------------------------------*/
 .tmm_member {
   background-color: #00457c;
-  border-top: 3px solid #bc0726;
+  border-top: 3px solid #bc2640;
   border-bottom: 0px; }
   .tmm_member .tmm_names {
     color: white; }
