@@ -8,18 +8,19 @@
  */
 ?>
 
-	</div><!-- #content -->
+		</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+		<footer id="colophon" class="site-footer" role="contentinfo">
 
 
-		
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+			
+		</footer><!-- #colophon -->
+		</div><!-- #page -->
 
+<!-- </div> -->
 <?php wp_footer(); ?>
 
 
-
+	
 </body>
 </html>

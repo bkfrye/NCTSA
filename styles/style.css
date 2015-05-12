@@ -18,16 +18,18 @@ p {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-header nav {
+header .main-navigation {
   line-height: 70px; }
-  header nav a:link, header nav a:visited {
+  header .main-navigation a:link, header .main-navigation a:visited {
     color: #fbf5f3; }
-  header nav li:hover {
+  header .main-navigation li:hover {
     background-color: #bc2640;
     -webkit-transition: all 200ms ease-in;
             transition: all 200ms ease-in; }
-  header nav .sub-menu a:link, header nav .sub-menu a:visited {
+  header .main-navigation .sub-menu a:link, header .main-navigation .sub-menu a:visited {
     color: #00457c; }
+  header .main-navigation .sub-menu li:hover a:link, header .main-navigation .sub-menu li:hover a:visited {
+    color: #fbf5f3; }
 
 header .site-branding .site-title {
   float: left;
@@ -88,14 +90,6 @@ header .site-branding .site-title {
   z-index: 0; }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 37.5em) {
-  .main-navigation ul {
-    display: block; } }
-
 /*--------------------------------------------------------------
 # Home Sections
 --------------------------------------------------------------*/

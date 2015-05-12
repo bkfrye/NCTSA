@@ -10,7 +10,6 @@
  *
  * @package nctsa
  */
-
 get_header(); ?>
 
 
@@ -26,24 +25,16 @@ get_header(); ?>
 					<div class="row">
 						<div class="small-12 medium-8 announcements columns">
 							<?php if ( have_posts() ) : ?>
-
 								<?php /* Start the Loop */ ?>
 								<?php while ( have_posts() ) : the_post(); ?>
-
 									<?php
 										get_template_part( 'template-parts/content', get_post_format() );
 									?>
-
 								<?php endwhile; ?>
-
 								<?php the_posts_navigation(); ?>
-
 							<?php else : ?>
-
 								<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
 							<?php endif; ?>
-
 						</div>
 
 						<div class="small-10 medium-4 columns">
@@ -53,15 +44,11 @@ get_header(); ?>
 				</section>
 <!-- wordpress loop ends -->
 
-						
 						<section class="about-home">
 							<?php
 						        $pages = get_pages('include=5');
-
 						        $count = 0;
-
 						        foreach($pages as $page)
-
 						        {
 						    ?>
 							<div class="row">
@@ -69,37 +56,23 @@ get_header(); ?>
 						            <section>
 							            	<p>
 							            		<?php echo apply_filters( 'the_content', $page->post_content ); ?>
-
 							            	</p>
 						            </section>
 						        </div>
 						    </div>
-
-						         
 						   <?php } ?>
 						</section>
 
-
-
-
 						<section class="officers-home">
-
-
 						   <?php
 						        $pages = get_pages('include=2');
-
 						        $count = 0;
-
 						        foreach($pages as $page)
-
-						        {
-						    ?>
-
+						        {?>
 
 							<div class="row">
 								<div class="small-12 small-centered columns" role="main">
 						            <section>
-
 							            	<p>
 												<?php echo apply_filters( 'the_content', $page->post_content );?>
 											</p>
@@ -109,20 +82,11 @@ get_header(); ?>
 						    <?php } ?>
 						</section>
 
-						         
-						   
+
+			</main><!-- #main -->
+		</div><!-- #primary -->
 
 
-					</main><!-- #main -->
-				</div><!-- #primary -->
-
-		</div>
-	</div>
-
-
-
-
-<?php get_footer(); ?>
 <div class="footer-contact">
 	<div class="row">
 		<div class="small-12 columns">
@@ -130,3 +94,6 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+<?php get_footer(); ?>
+
+
