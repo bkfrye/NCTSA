@@ -93,6 +93,9 @@ header .site-branding .site-title {
 /*--------------------------------------------------------------
 # Home Sections
 --------------------------------------------------------------*/
+.sp-slides-container {
+  width: 100%; }
+
 .hero {
   background: url(http://localhost:8888/nctsa/wp-content/uploads/2015/05/placeholder.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -108,9 +111,11 @@ section {
     color: #fbf5f3; }
 
 .announcements {
-  border: 1px solid #7e7e7e;
+  border-right: 1px solid #e4e4e4;
   margin: 12px 0px 12px 0px;
   padding: 0px 22px 0px 22px; }
+  .announcements .entry-title {
+    border-bottom: 4px solid #bc2640; }
 
 .about-home {
   background-color: #00457c;

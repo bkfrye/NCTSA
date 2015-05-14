@@ -173,6 +173,10 @@ header{
 # Home Sections
 --------------------------------------------------------------*/
 
+.sp-slides-container{
+	width: 100%;
+}
+
 .hero{
 	background: url(http://localhost:8888/nctsa/wp-content/uploads/2015/05/placeholder.jpg) no-repeat center center fixed; 
  	background-size: cover;
@@ -196,9 +200,13 @@ section{
 }
 
 .announcements{
-	border:1px solid $border-color;
+	border-right:1px solid $border-color;
 	margin: 12px 0px 12px 0px;
 	padding: 0px 22px 0px 22px;
+
+	.entry-title{
+		border-bottom: 4px solid $red;
+	}
 
 }
 
