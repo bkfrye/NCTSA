@@ -93,9 +93,6 @@ header .site-branding .site-title {
 /*--------------------------------------------------------------
 # Home Sections
 --------------------------------------------------------------*/
-.sp-slides-container {
-  width: 100%; }
-
 .hero {
   background: url(http://localhost:8888/nctsa/wp-content/uploads/2015/05/placeholder.jpg) no-repeat center center fixed;
   background-size: cover;
