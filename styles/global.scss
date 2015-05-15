@@ -11,7 +11,10 @@ body{
 }
 
 h1, h2, h3, h4, p{
-	font-family: $font-stack;
+	// font-family: $font-stack;
+	// font-family: $lato;
+	// font-family: $hind;
+	font-family: $oxygen;
 } 
 p{
 	font-weight: 300;
@@ -20,6 +23,17 @@ p{
 
 h1, h2, h3, h4{
 	// color: $blue;
+}
+
+#main {
+
+	a:link, a:visited{
+		color: $blue;
+	}
+
+	a:hover, a:active{
+		color:$red;
+	}
 }
 
 .comments-link{
@@ -255,6 +269,25 @@ section{
 	margin: 0;
 	padding:0;
 }
+
+
+/*--------------------------------------------------------------
+# Default Pages
+--------------------------------------------------------------*/
+
+// download logo page
+
+.logo-dl{
+	ul{
+		li{
+			text-align: center;
+		}
+	}
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

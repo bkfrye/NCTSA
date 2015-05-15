@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300);
+@import url(http://fonts.googleapis.com/css?family=Hind:400,300,600);
 /*--------------------------------------------------------------
 # Site Settings
 --------------------------------------------------------------*/
@@ -7,10 +9,16 @@ body {
   color: #484a47; }
 
 h1, h2, h3, h4, p {
-  font-family: Lato, sans-serif; }
+  font-family: "Oxygen", sans-serif; }
 
 p {
   font-weight: 300; }
+
+#main a:link, #main a:visited {
+  color: #00457c; }
+
+#main a:hover, #main a:active {
+  color: #bc2640; }
 
 .comments-link {
   display: none; }
@@ -157,6 +165,12 @@ section {
   height: auto;
   margin: 0;
   padding: 0; }
+
+/*--------------------------------------------------------------
+# Default Pages
+--------------------------------------------------------------*/
+.logo-dl ul li {
+  text-align: center; }
 
 /*--------------------------------------------------------------
 # Footer

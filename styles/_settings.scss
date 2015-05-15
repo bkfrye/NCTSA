@@ -12,5 +12,17 @@ $border-color: #e4e4e4;
 // fonts
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300);
+@import url(http://fonts.googleapis.com/css?family=Hind:400,300,600);
 
-$font-stack: Lato, sans-serif;
+// $font-stack: Lato, sans-serif;
+// $font-stack: 'Oxygen', sans-serif;
+// $font-stack: Hind, sans-serif;
+
+
+
+$oxygen: 'Oxygen', sans-serif;
+
+$hind: 'Hind', sans-serif;
+
+$lato: 'Lato', sans-serif;
