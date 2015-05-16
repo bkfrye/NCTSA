@@ -188,6 +188,21 @@ section {
     background: #00457c;
     color: #fbf5f3; }
 
+#main .join-btn {
+  border: 1px solid #fbf5f3;
+  border-radius: 4px;
+  margin: 50px auto;
+  font-size: 1.6em; }
+  #main .join-btn a:link, #main .join-btn a:visited {
+    color: #fbf5f3;
+    padding: 10px 18px;
+    display: block;
+    font-weight: 200;
+    text-align: center; }
+  #main .join-btn a:hover {
+    background-color: #fbf5f3;
+    color: #bc2640; }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

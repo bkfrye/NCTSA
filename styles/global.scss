@@ -287,8 +287,10 @@ section{
 }
 
 
-// creating the button
+// creating the buttons
 #main{
+
+	// join page
 	.btn{
 		border: 1px solid $red;
 		border-radius: 4px;
@@ -308,6 +310,30 @@ section{
 			color: $white;
 		}
 	}
+
+	// homepg
+	.join-btn{
+		border: 1px solid $white;
+		border-radius: 4px;
+		margin:50px auto;
+		font-size: 1.6em;
+
+		a:link, a:visited{
+			color: $white;
+			padding: 10px 18px;
+			display: block;
+			font-weight: 200;
+			text-align: center;
+		}
+
+		a:hover{
+			background-color: $white;
+			color: $red;
+		}
+	}
+
+
+
 }
 
 
