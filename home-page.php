@@ -36,12 +36,6 @@ get_header(); ?>
 							<?php else : ?>
 								<?php get_template_part( 'template-parts/content', 'none' ); ?>
 							<?php endif; ?>
-
-
-
-
-
-
 						</div>
 
 						<div class="small-12 large-4 show-for-large-up columns">

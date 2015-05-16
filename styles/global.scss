@@ -61,9 +61,7 @@ header{
 
 .header{
 		background-color: $blue;
-		box-shadow: 1px 1px 1px #888888;
 		height: 60px;
-
 
 		img{
 			max-width: 172px;
@@ -370,39 +368,40 @@ footer{
 }
 
 form{ 
-	margin: 20px auto;
-	width: 760px; 
+	// margin: 20px auto;
+	// width: 760px; 
 
 
 	input,
 	textarea{
 		z-index: 1;
-		position: relative;
+		// position: relative;
 		background: transparent;
 		border: 1px solid $white;
 		color: $white;
 		display: block;
 		float: left;
-		font-family: 'Lato', sans-serif;
+		// font-family: 'Lato', sans-serif;
 		font-size: 14px;
 		font-weight: 100;
 		letter-spacing: 4px;
 		height: 50px;
 		margin-bottom: 20px;
-		margin-right: 20px;
+		// margin-right: 20px;
 		padding-left: 10px;
 		text-align: left;
-		width: 220px;
+		// width: 220px;
+		width: 100%;
 	}
 	
 	input.wide,
 	textarea{
-		width: 725px;
+		// width: 725px;
 	}
 	
 	textarea{
-		padding-top: 20px;
-		height: 100px;
+		// padding-top: 20px;
+		// height: 100px;
 	}
 	
 	 
@@ -458,7 +457,15 @@ form{
 			border-radius: 4px;
 			border: 1px solid $white;
 		}
+
+		
+
+
+
 }
+
+
+
 
 .contact-page{
 	form{ 
@@ -551,4 +558,8 @@ form{
 				border: 1px solid $blue;
 			}
 	}
+
+	.offset{
+	margin-left:12.5%;
+		}
 }
