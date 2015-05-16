@@ -206,6 +206,8 @@ section {
 #main .bio-btn {
   max-width: 360px;
   margin-top: -34px; }
+  #main .bio-btn a:hover {
+    border: 1px solid #bc2640; }
 
 /*--------------------------------------------------------------
 # Footer

@@ -336,6 +336,10 @@ section{
 		.bio-btn{
 			max-width: 360px;
 			margin-top: -34px;
+
+			a:hover{
+				border: 1px solid $red;
+			}
 		}
 
 

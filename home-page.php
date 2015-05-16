@@ -1,9 +1,7 @@
 <?php
-/**
-*
- *
- * @package nctsa
- */
+/*
+Template Name: Front-Page 
+*/
 get_header(); ?>
 
 
@@ -32,7 +30,7 @@ get_header(); ?>
 								<?php endwhile; ?>
 
 
-								<?php the_posts_navigation(); ?>
+								<a href="<?php echo get_page_link(255); ?>">Older News</a>
 
 								
 							<?php else : ?>
