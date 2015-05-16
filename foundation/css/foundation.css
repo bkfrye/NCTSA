@@ -1753,6 +1753,10 @@ input[type="file"] {
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px); }
 
+    #wpadminbar{
+        /*margin-top: -13px;*/
+      }
+
 
 
     }

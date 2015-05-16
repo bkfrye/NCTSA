@@ -11,16 +11,13 @@ get_header(); ?>
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
 
-				<div class="hero">
-
-
-				</div>
+				<div class="hero show-for-medium-up"></div>
 
 
 <!-- wordpress loop -->
 				<section>
 					<div class="row">
-						<div class="small-12 medium-8 announcements columns">
+						<div class="small-12 large-8 announcements columns">
 
 							<!-- only display latest post -->
 							<?php query_posts('showposts=1'); ?>
@@ -49,7 +46,7 @@ get_header(); ?>
 
 						</div>
 
-						<div class="small-10 medium-4 columns">
+						<div class="small-12 large-4 show-for-large-up columns">
 							<?php get_sidebar(); ?>
 						</div>
 					</div>
