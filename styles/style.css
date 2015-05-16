@@ -8,7 +8,7 @@ body {
   background-color: #fbf5f3;
   color: #484a47; }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, a {
   font-family: "Oxygen", sans-serif; }
 
 p {
@@ -49,6 +49,7 @@ header {
   clear: both;
   display: block;
   float: right;
+  margin-right: 44px;
   position: relative;
   z-index: 20;
   -webkit-transition: all 299ms ease;
@@ -171,6 +172,21 @@ section {
 --------------------------------------------------------------*/
 .logo-dl ul li {
   text-align: center; }
+
+#main .btn {
+  border: 1px solid #bc2640;
+  border-radius: 4px;
+  margin: 30px auto;
+  font-size: 2em;
+  max-width: 360px; }
+  #main .btn a {
+    padding: 10px 18px;
+    display: block;
+    font-weight: 200;
+    text-align: center; }
+  #main .btn a:hover {
+    background: #00457c;
+    color: #fbf5f3; }
 
 /*--------------------------------------------------------------
 # Footer

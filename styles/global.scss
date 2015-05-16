@@ -10,7 +10,7 @@ body{
 	color: $body-text-color;
 }
 
-h1, h2, h3, h4, p{
+h1, h2, h3, h4, p, a{
 	// font-family: $font-stack;
 	// font-family: $lato;
 	// font-family: $hind;
@@ -82,6 +82,7 @@ header{
 	clear: both;
 	display: block;
 	float: right;
+	margin-right: 44px;
 	position: relative;
 	z-index: 20;
 	transition: all 299ms ease;
@@ -285,6 +286,29 @@ section{
 	}
 }
 
+
+// creating the button
+#main{
+	.btn{
+		border: 1px solid $red;
+		border-radius: 4px;
+		margin: 30px auto;
+		font-size: 2em;
+		max-width: 360px;
+
+		a{
+			padding: 10px 18px;
+			display: block;
+			font-weight: 200;
+			text-align: center;
+		}
+
+		a:hover{
+			background: $blue;
+			color: $white;
+		}
+	}
+}
 
 
 
