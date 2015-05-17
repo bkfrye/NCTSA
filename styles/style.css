@@ -102,7 +102,9 @@ header {
 --------------------------------------------------------------*/
 .hero {
   background: url(http://localhost:8888/nctsa/wp-content/uploads/2015/05/placeholder.jpg) no-repeat center center fixed #00457c;
-  background-size: contain;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://localhost:8888/nctsa/wp-content/uploads/2015/05/placeholder.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://localhost:8888/nctsa/wp-content/uploads/2015/05/placeholder.jpg', sizingMethod='scale')";
   height: 420px; }
 
 .widget-title {
@@ -226,14 +228,40 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+.site-footer {
+  background: #bc2640; }
+  .site-footer .footer-nav {
+    clear: both;
+    background: #484a47;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+    height: 55px; }
+    .site-footer .footer-nav a:link, .site-footer .footer-nav a:visited {
+      color: #fbf5f3;
+      padding: 18px; }
+    .site-footer .footer-nav ul {
+      text-align: center;
+      line-height: 55px;
+      margin: 0; }
+      .site-footer .footer-nav ul li {
+        display: inline-block; }
+  .site-footer .footer-bottom {
+    background: #484a47;
+    color: #fbf5f3; }
+  .site-footer .thanks {
+    display: block;
+    margin: 0 auto;
+    padding-top: 12px;
+    max-width: 622px;
+    text-align: center; }
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.footer-contact {
-  background-color: #484a47;
-  padding-top: 44px; }
-  .footer-contact h2 {
-    color: #fbf5f3; }
+.footer-contact h2 {
+  color: #fbf5f3; }
 
 @media only screen and (min-width: 64.043em) {
   form {

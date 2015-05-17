@@ -172,7 +172,9 @@ header{
 
 .hero{
 	background: url(http://localhost:8888/nctsa/wp-content/uploads/2015/05/placeholder.jpg) no-repeat center center fixed $blue; 
- 	background-size: contain;
+ 	background-size: cover;
+ 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://localhost:8888/nctsa/wp-content/uploads/2015/05/placeholder.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://localhost:8888/nctsa/wp-content/uploads/2015/05/placeholder.jpg', sizingMethod='scale')";
  	height: 420px;
 
 }
@@ -375,8 +377,49 @@ section{
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-footer{
+.site-footer{
 
+	background: $red;
+
+	.footer-nav{
+		clear: both;
+		background: $black;
+		bottom: 0;
+		left: 0;
+		position: relative;
+		width: 100%;
+		height: 55px;
+
+
+		a:link, a:visited{
+			color: $white;
+			padding: 18px;
+		}
+
+		ul {
+			text-align: center;
+			line-height: 55px;
+			margin: 0;
+
+			li{
+				display: inline-block;
+			}
+		}
+	}
+
+	.footer-bottom{
+		background: $black;
+		color: $white;
+
+	}
+
+	.thanks{
+		display: block;
+		margin: 0 auto;
+		padding-top: 12px;
+		max-width: 622px;
+		text-align: center;
+	}
 
 }
 
@@ -384,8 +427,9 @@ footer{
 # Contact Section
 --------------------------------------------------------------*/
 .footer-contact{
-	background-color: $black;
-	padding-top: 44px;
+	// background-color: $black;
+	// padding-top: 84px;
+
 
 	h2{
 		color: $white;
