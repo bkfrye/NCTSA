@@ -101,8 +101,8 @@ header {
 # Home Sections
 --------------------------------------------------------------*/
 .hero {
-  background: url(http://localhost:8888/nctsa/wp-content/uploads/2015/05/placeholder.jpg) no-repeat center center fixed;
-  background-size: cover;
+  background: url(http://localhost:8888/nctsa/wp-content/uploads/2015/05/placeholder.jpg) no-repeat center center fixed #00457c;
+  background-size: contain;
   height: 420px; }
 
 .widget-title {
@@ -147,9 +147,9 @@ section {
     margin-right: 3%;
     margin-left: 3%; } }
 
-.tmm_member .tmm_photo {
-  border: none;
-  border-radius: 50% !important; }
+@media only screen and (max-width: 100em) {
+  .tmm_member .tmm_photo {
+    border-radius: 50% !important; } }
 
 .tmm_names {
   color: #484a47; }
@@ -209,6 +209,21 @@ section {
     border: 1px solid #bc2640; }
 
 /*--------------------------------------------------------------
+# Mobile Page Navigations 
+--------------------------------------------------------------*/
+#main .mobile-pg-links {
+  margin-top: 12px; }
+  #main .mobile-pg-links a:link, #main .mobile-pg-links a:visited {
+    background-color: #bc2640;
+    color: #fbf5f3;
+    text-align: center;
+    height: 47px;
+    display: block;
+    line-height: 47px; }
+  #main .mobile-pg-links a:hover {
+    color: #fbf5f3; }
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -220,134 +235,169 @@ section {
   .footer-contact h2 {
     color: #fbf5f3; }
 
-form input,
-form textarea {
-  z-index: 1;
-  background: transparent;
-  border: 1px solid #fbf5f3;
-  color: #fbf5f3;
-  display: block;
-  float: left;
-  font-size: 14px;
-  font-weight: 100;
-  letter-spacing: 4px;
-  height: 50px;
-  margin-bottom: 20px;
-  padding-left: 10px;
-  text-align: left;
-  width: 100%; }
+@media only screen and (min-width: 64.043em) {
+  form {
+    margin: 20px auto;
+    width: 760px; }
+    form input,
+    form textarea {
+      z-index: 1;
+      position: relative;
+      background: transparent;
+      border: 1px solid #fbf5f3;
+      color: #fbf5f3;
+      display: block;
+      float: left;
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      font-weight: 100;
+      letter-spacing: 4px;
+      height: 50px;
+      margin-bottom: 20px;
+      margin-right: 20px;
+      padding-left: 10px;
+      text-align: left;
+      width: 228px; }
+    form input.wide,
+    form textarea {
+      width: 725px; }
+    form textarea {
+      padding-top: 20px;
+      height: 300px; }
+    form ::-webkit-input-placeholder {
+      color: #fbf5f3; }
+    form :-moz-placeholder {
+      /* Firefox 18- */
+      color: #fbf5f3; }
+    form ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #fbf5f3; }
+    form :-ms-input-placeholder {
+      color: #fbf5f3; }
+    form .button, form a.button {
+      border: 1px solid #fbf5f3;
+      border-radius: 4px;
+      color: #fbf5f3;
+      font: 16px/16px "Lato", sans-serif;
+      font-weight: 300;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      padding: 18px 40px;
+      width: auto; }
+    form .button:hover,
+    form a.button:hover {
+      background-color: #fbf5f3;
+      border-color: #fbf5f3;
+      color: #bc2640;
+      opacity: 1.0; }
+    form .button {
+      float: none;
+      font-size: 14px;
+      padding: 0 18px; }
+    form .button {
+      float: left; }
+    form a.button, form .button {
+      color: #fbf5f3;
+      text-decoration: none;
+      border-radius: 4px;
+      border: 1px solid #fbf5f3; } }
 
-form ::-webkit-input-placeholder {
-  color: #fbf5f3; }
+@media only screen and (max-width: 64em) {
+  form {
+    margin: 20px auto;
+    width: 100%; }
+    form input,
+    form textarea {
+      z-index: 1;
+      position: relative;
+      background: transparent;
+      border: 1px solid #fbf5f3;
+      color: #fbf5f3;
+      display: block;
+      float: left;
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      font-weight: 100;
+      letter-spacing: 4px;
+      height: 50px;
+      margin-bottom: 20px;
+      margin-right: 20px;
+      padding-left: 10px;
+      text-align: left;
+      width: 100%; }
+    form input.wide,
+    form textarea {
+      width: 100%; }
+    form textarea {
+      padding-top: 20px;
+      height: 300px; }
+    form ::-webkit-input-placeholder {
+      color: #fbf5f3; }
+    form :-moz-placeholder {
+      /* Firefox 18- */
+      color: #fbf5f3; }
+    form ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #fbf5f3; }
+    form :-ms-input-placeholder {
+      color: #fbf5f3; }
+    form .button, form a.button {
+      border: 1px solid #fbf5f3;
+      border-radius: 4px;
+      color: #fbf5f3;
+      font: 16px/16px "Lato", sans-serif;
+      font-weight: 300;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      padding: 18px 40px;
+      width: auto; }
+    form .button:hover,
+    form a.button:hover {
+      background-color: #fbf5f3;
+      border-color: #fbf5f3;
+      color: #bc2640;
+      opacity: 1.0; }
+    form .button {
+      float: none;
+      font-size: 14px;
+      padding: 0 18px; }
+    form .button {
+      float: left; }
+    form a.button, form .button {
+      color: #fbf5f3;
+      text-decoration: none;
+      border-radius: 4px;
+      border: 1px solid #fbf5f3; } }
 
-form :-moz-placeholder {
+.contact-page form input,
+.contact-page form textarea {
+  border: 1px solid #00457c;
+  color: #00457c; }
+
+.contact-page form ::-webkit-input-placeholder {
+  color: #00457c; }
+
+.contact-page form :-moz-placeholder {
   /* Firefox 18- */
-  color: #fbf5f3; }
+  color: #00457c; }
 
-form ::-moz-placeholder {
+.contact-page form ::-moz-placeholder {
   /* Firefox 19+ */
+  color: #00457c; }
+
+.contact-page form :-ms-input-placeholder {
+  color: #00457c; }
+
+.contact-page form .button, .contact-page form a.button {
+  border: 1px solid #00457c;
+  color: #00457c; }
+
+.contact-page form .button:hover,
+.contact-page form a.button:hover {
+  background-color: #00457c;
+  border-color: #00457c;
   color: #fbf5f3; }
 
-form :-ms-input-placeholder {
-  color: #fbf5f3; }
-
-form .button, form a.button {
-  border: 1px solid #fbf5f3;
-  border-radius: 4px;
-  color: #fbf5f3;
-  font: 16px/16px "Lato", sans-serif;
-  font-weight: 300;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  padding: 18px 40px;
-  width: auto; }
-
-form .button:hover,
-form a.button:hover {
-  background-color: #fbf5f3;
-  border-color: #fbf5f3;
+.contact-page form a.button, .contact-page form .button {
   color: #00457c;
-  opacity: 1.0; }
-
-form .button {
-  float: none;
-  font-size: 14px;
-  padding: 0 18px; }
-
-form .button {
-  float: left; }
-
-form a.button, form .button {
-  color: #fbf5f3;
-  text-decoration: none;
-  border-radius: 4px;
-  border: 1px solid #fbf5f3; }
-
-.contact-page form {
-  margin: 20px auto;
-  width: 760px; }
-  .contact-page form input,
-  .contact-page form textarea {
-    z-index: 1;
-    position: relative;
-    background: transparent;
-    border: 1px solid #00457c;
-    color: #00457c;
-    display: block;
-    float: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    font-weight: 100;
-    letter-spacing: 4px;
-    height: 50px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    padding-left: 10px;
-    text-align: left;
-    width: 220px; }
-  .contact-page form input.wide,
-  .contact-page form textarea {
-    width: 725px; }
-  .contact-page form textarea {
-    padding-top: 20px;
-    height: 300px; }
-  .contact-page form ::-webkit-input-placeholder {
-    color: #00457c; }
-  .contact-page form :-moz-placeholder {
-    /* Firefox 18- */
-    color: #00457c; }
-  .contact-page form ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #00457c; }
-  .contact-page form :-ms-input-placeholder {
-    color: #00457c; }
-  .contact-page form .button, .contact-page form a.button {
-    border: 1px solid #00457c;
-    border-radius: 4px;
-    color: #00457c;
-    font: 16px/16px "Lato", sans-serif;
-    font-weight: 300;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    padding: 18px 40px;
-    width: auto; }
-  .contact-page form .button:hover,
-  .contact-page form a.button:hover {
-    background-color: #00457c;
-    border-color: #00457c;
-    color: #fbf5f3;
-    opacity: 1.0; }
-  .contact-page form .button {
-    float: none;
-    font-size: 14px;
-    padding: 0 18px; }
-  .contact-page form .button {
-    float: left; }
-  .contact-page form a.button, .contact-page form .button {
-    color: #00457c;
-    text-decoration: none;
-    border-radius: 4px;
-    border: 1px solid #00457c; }
-
-.contact-page .offset {
-  margin-left: 12.5%; }
+  border: 1px solid #00457c; }

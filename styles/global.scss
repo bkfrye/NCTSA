@@ -171,9 +171,10 @@ header{
 
 
 .hero{
-	background: url(http://localhost:8888/nctsa/wp-content/uploads/2015/05/placeholder.jpg) no-repeat center center fixed; 
- 	background-size: cover;
+	background: url(http://localhost:8888/nctsa/wp-content/uploads/2015/05/placeholder.jpg) no-repeat center center fixed $blue; 
+ 	background-size: contain;
  	height: 420px;
+
 }
 
 
@@ -244,9 +245,10 @@ section{
 	}
 }
 
-.tmm_member .tmm_photo{
-	border: none;
-	border-radius: 50% !important;
+@media only screen and (max-width: 100em){
+	.tmm_member .tmm_photo{
+		border-radius: 50% !important;
+	}
 }
 
 .tmm_names{
@@ -345,6 +347,30 @@ section{
 }
 
 
+/*--------------------------------------------------------------
+# Mobile Page Navigations 
+--------------------------------------------------------------*/
+#main{	
+	.mobile-pg-links{
+
+		margin-top: 12px;
+
+		a:link, a:visited{
+			background-color: $red;
+			color: $white;
+			text-align: center;
+			height: 47px;
+			display: block;
+			line-height: 47px;
+
+		}
+
+		a:hover{
+			color: $white;
+		}
+	}
+}
+
 
 /*--------------------------------------------------------------
 # Footer
@@ -367,107 +393,7 @@ footer{
 
 }
 
-form{ 
-	// margin: 20px auto;
-	// width: 760px; 
-
-
-	input,
-	textarea{
-		z-index: 1;
-		// position: relative;
-		background: transparent;
-		border: 1px solid $white;
-		color: $white;
-		display: block;
-		float: left;
-		// font-family: 'Lato', sans-serif;
-		font-size: 14px;
-		font-weight: 100;
-		letter-spacing: 4px;
-		height: 50px;
-		margin-bottom: 20px;
-		// margin-right: 20px;
-		padding-left: 10px;
-		text-align: left;
-		// width: 220px;
-		width: 100%;
-	}
-	
-	input.wide,
-	textarea{
-		// width: 725px;
-	}
-	
-	textarea{
-		// padding-top: 20px;
-		// height: 100px;
-	}
-	
-	 
-	
-	::-webkit-input-placeholder {
-   		color: $white;
-	}
-
-	:-moz-placeholder { /* Firefox 18- */
-	   	color: $white;  
-	}
-
-	::-moz-placeholder {  /* Firefox 19+ */
-	   	color: $white;  
-	}
-
-	:-ms-input-placeholder {  
-	   	color: $white;  
-	}
-	
-	.button, a.button{
-
-		border: 1px solid $white;
-		border-radius: 4px;
-		color: $white;
-		font: 16px/16px 'Lato', sans-serif;
-		font-weight: 300;
-		letter-spacing: 4px;
-		text-transform: uppercase;
-		padding: 18px 40px;
-		width: auto;
-	}
-
-		.button:hover,
-		a.button:hover{
-			background-color: $white;
-			border-color: $white;
-			color: $blue;
-			opacity: 1.0;
-		}
-		
-		.button{ 
-			float: none;
-			font-size: 14px;
-			padding: 0 18px; 
-		}
-		
-		.button{ float: left; }
-		
-		a.button, .button{ 
-			color: $white;
-			text-decoration: none;
-			border-radius: 4px;
-			border: 1px solid $white;
-		}
-
-		
-
-
-
-}
-
-
-
-
-.contact-page{
+@media only screen and (min-width: 64.043em){
 	form{ 
 		margin: 20px auto;
 		width: 760px; 
@@ -478,8 +404,8 @@ form{
 			z-index: 1;
 			position: relative;
 			background: transparent;
-			border: 1px solid $blue;
-			color: $blue;
+			border: 1px solid $white;
+			color: $white;
 			display: block;
 			float: left;
 			font-family: 'Lato', sans-serif;
@@ -491,7 +417,7 @@ form{
 			margin-right: 20px;
 			padding-left: 10px;
 			text-align: left;
-			width: 220px;
+			width: 228px;
 		}
 		
 		input.wide,
@@ -506,6 +432,168 @@ form{
 		
 		 
 		
+		::-webkit-input-placeholder {
+	   		color: $white;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+		   	color: $white;  
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+		   	color: $white;  
+		}
+
+		:-ms-input-placeholder {  
+		   	color: $white;  
+		}
+		
+		.button, a.button{
+
+			border: 1px solid $white;
+			border-radius: 4px;
+			color: $white;
+			font: 16px/16px 'Lato', sans-serif;
+			font-weight: 300;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			padding: 18px 40px;
+			width: auto;
+		}
+
+			.button:hover,
+			a.button:hover{
+				background-color: $white;
+				border-color: $white;
+				color: $red;
+				opacity: 1.0;
+			}
+			
+			.button{ 
+				float: none;
+				font-size: 14px;
+				padding: 0 18px; 
+			}
+			
+			.button{ float: left; }
+			
+			a.button, .button{ 
+				color: $white;
+				text-decoration: none;
+				border-radius: 4px;
+				border: 1px solid $white;
+			}
+	}
+}
+
+@media only screen and (max-width: 64em){
+	form{ 
+		margin: 20px auto;
+		width: 100%; 
+
+
+		input,
+		textarea{
+			z-index: 1;
+			position: relative;
+			background: transparent;
+			border: 1px solid $white;
+			color: $white;
+			display: block;
+			float: left;
+			font-family: 'Lato', sans-serif;
+			font-size: 14px;
+			font-weight: 100;
+			letter-spacing: 4px;
+			height: 50px;
+			margin-bottom: 20px;
+			margin-right: 20px;
+			padding-left: 10px;
+			text-align: left;
+			width: 100%;
+		}
+		
+		input.wide,
+		textarea{
+			width: 100%;
+		}
+		
+		textarea{
+			padding-top: 20px;
+			height: 300px;
+		}
+		
+		 
+		
+		::-webkit-input-placeholder {
+	   		color: $white;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+		   	color: $white;  
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+		   	color: $white;  
+		}
+
+		:-ms-input-placeholder {  
+		   	color: $white;  
+		}
+		
+		.button, a.button{
+
+			border: 1px solid $white;
+			border-radius: 4px;
+			color: $white;
+			font: 16px/16px 'Lato', sans-serif;
+			font-weight: 300;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			padding: 18px 40px;
+			width: auto;
+		}
+
+			.button:hover,
+			a.button:hover{
+				background-color: $white;
+				border-color: $white;
+				color: $red;
+				opacity: 1.0;
+			}
+			
+			.button{ 
+				float: none;
+				font-size: 14px;
+				padding: 0 18px; 
+			}
+			
+			.button{ float: left; }
+			
+			a.button, .button{ 
+				color: $white;
+				text-decoration: none;
+				border-radius: 4px;
+				border: 1px solid $white;
+			}
+	}
+}
+
+
+
+
+
+.contact-page{
+	form{ 
+
+		input,
+		textarea{
+
+			border: 1px solid $blue;
+			color: $blue;
+
+		}
+
 		::-webkit-input-placeholder {
 	   		color: $blue;
 		}
@@ -525,14 +613,8 @@ form{
 		.button, a.button{
 
 			border: 1px solid $blue;
-			border-radius: 4px;
 			color: $blue;
-			font: 16px/16px 'Lato', sans-serif;
-			font-weight: 300;
-			letter-spacing: 4px;
-			text-transform: uppercase;
-			padding: 18px 40px;
-			width: auto;
+
 		}
 
 			.button:hover,
@@ -540,26 +622,12 @@ form{
 				background-color: $blue;
 				border-color: $blue;
 				color: $white;
-				opacity: 1.0;
 			}
 			
-			.button{ 
-				float: none;
-				font-size: 14px;
-				padding: 0 18px; 
-			}
-			
-			.button{ float: left; }
 			
 			a.button, .button{ 
 				color: $blue;
-				text-decoration: none;
-				border-radius: 4px;
 				border: 1px solid $blue;
 			}
 	}
-
-	.offset{
-	margin-left:12.5%;
-		}
 }
