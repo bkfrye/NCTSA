@@ -379,7 +379,8 @@ section{
 --------------------------------------------------------------*/
 .site-footer{
 
-	background: $red;
+	// background: $red;
+	// width: 100%;
 
 	.footer-nav{
 		clear: both;
@@ -674,4 +675,10 @@ section{
 				border: 1px solid $blue;
 			}
 	}
+}
+
+
+.footer-section{
+	background: $red;
+	// width: 100%;
 }

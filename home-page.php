@@ -87,7 +87,7 @@ get_header(); ?>
 			</main><!-- #main -->
 		</div><!-- #primary -->
 
-
+<section class="footer-section">
 <div class="footer-contact">
 	<div class="row">
 		<div class="small-12 columns">
@@ -95,4 +95,5 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+</section>
 <?php get_footer(); ?>

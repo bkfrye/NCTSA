@@ -228,34 +228,34 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-.site-footer {
-  background: #bc2640; }
-  .site-footer .footer-nav {
-    clear: both;
-    background: #484a47;
-    bottom: 0;
-    left: 0;
-    position: relative;
-    width: 100%;
-    height: 55px; }
-    .site-footer .footer-nav a:link, .site-footer .footer-nav a:visited {
-      color: #fbf5f3;
-      padding: 18px; }
-    .site-footer .footer-nav ul {
-      text-align: center;
-      line-height: 55px;
-      margin: 0; }
-      .site-footer .footer-nav ul li {
-        display: inline-block; }
-  .site-footer .footer-bottom {
-    background: #484a47;
-    color: #fbf5f3; }
-  .site-footer .thanks {
-    display: block;
-    margin: 0 auto;
-    padding-top: 12px;
-    max-width: 622px;
-    text-align: center; }
+.site-footer .footer-nav {
+  clear: both;
+  background: #484a47;
+  bottom: 0;
+  left: 0;
+  position: relative;
+  width: 100%;
+  height: 55px; }
+  .site-footer .footer-nav a:link, .site-footer .footer-nav a:visited {
+    color: #fbf5f3;
+    padding: 18px; }
+  .site-footer .footer-nav ul {
+    text-align: center;
+    line-height: 55px;
+    margin: 0; }
+    .site-footer .footer-nav ul li {
+      display: inline-block; }
+
+.site-footer .footer-bottom {
+  background: #484a47;
+  color: #fbf5f3; }
+
+.site-footer .thanks {
+  display: block;
+  margin: 0 auto;
+  padding-top: 12px;
+  max-width: 622px;
+  text-align: center; }
 
 /*--------------------------------------------------------------
 # Contact Section
@@ -429,3 +429,6 @@ section {
 .contact-page form a.button, .contact-page form .button {
   color: #00457c;
   border: 1px solid #00457c; }
+
+.footer-section {
+  background: #bc2640; }
