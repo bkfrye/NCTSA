@@ -236,7 +236,7 @@ section {
 .site-footer {
   clear: both;
   width: 100%;
-  position: absolute;
+  position: static;
   bottom: 0; }
   .site-footer .footer-nav {
     clear: both;
