@@ -4,7 +4,11 @@
 /*--------------------------------------------------------------
 # Site Settings
 --------------------------------------------------------------*/
+html {
+  height: 100%; }
+
 body {
+  height: 100%;
   background-color: #fbf5f3;
   color: #484a47; }
 
@@ -14,11 +18,12 @@ h1, h2, h3, h4, p, a {
 p {
   font-weight: 300; }
 
-#main a:link, #main a:visited {
-  color: #00457c; }
-
-#main a:hover, #main a:active {
-  color: #bc2640; }
+#main {
+  min-height: 100%; }
+  #main a:link, #main a:visited {
+    color: #00457c; }
+  #main a:hover, #main a:active {
+    color: #bc2640; }
 
 .comments-link {
   display: none; }
@@ -228,34 +233,33 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-.site-footer .footer-nav {
+.site-footer {
   clear: both;
-  background: #484a47;
-  bottom: 0;
-  left: 0;
-  position: relative;
   width: 100%;
-  height: 55px; }
-  .site-footer .footer-nav a:link, .site-footer .footer-nav a:visited {
-    color: #fbf5f3;
-    padding: 18px; }
-  .site-footer .footer-nav ul {
-    text-align: center;
-    line-height: 55px;
-    margin: 0; }
-    .site-footer .footer-nav ul li {
-      display: inline-block; }
-
-.site-footer .footer-bottom {
-  background: #484a47;
-  color: #fbf5f3; }
-
-.site-footer .thanks {
-  display: block;
-  margin: 0 auto;
-  padding-top: 12px;
-  max-width: 622px;
-  text-align: center; }
+  position: absolute;
+  bottom: 0; }
+  .site-footer .footer-nav {
+    clear: both;
+    background: #484a47;
+    height: 55px; }
+    .site-footer .footer-nav a:link, .site-footer .footer-nav a:visited {
+      color: #fbf5f3;
+      padding: 18px; }
+    .site-footer .footer-nav ul {
+      text-align: center;
+      line-height: 55px;
+      margin: 0; }
+      .site-footer .footer-nav ul li {
+        display: inline-block; }
+  .site-footer .footer-bottom {
+    background: #484a47;
+    color: #fbf5f3; }
+  .site-footer .thanks {
+    display: block;
+    margin: 0 auto;
+    padding-top: 12px;
+    max-width: 622px;
+    text-align: center; }
 
 /*--------------------------------------------------------------
 # Contact Section
