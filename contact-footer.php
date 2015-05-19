@@ -5,30 +5,20 @@ Template Name: contact-footer
 */
  get_header();?>
 
-<!-- 		<div class="row">
-			<div class="small-12 columns" role="main"> -->
-				<h2>Contact Us</h2>
 
 
-				<form id="contact-form" method="post" action="" accept-charset="UTF-8">
-				    <input type="hidden" name="action" value="contactForm/sendMessage">
-				    <input type="hidden" name="redirect" value="">
-					
-					<input id="secondName" type="hidden" name="message[name]" value="">
+	<h2>Contact Us</h2>
+	<form id="contact-form" novalidate="novalidate">
+	    <input id="fname" type="text" name="fname" placeholder="YOUR NAME" value="">
+	    <input id="email" type="text" name="email" placeholder="EMAIL ADDRESS" value="">		
+	    <input id="subject" type="text" name="subject" placeholder="SUBJECT" value="">
+	    <textarea rows="10" cols="40" id="message" name="message" placeholder="MESSAGE"></textarea>
+	<img id="contact_ajax" style="float:left; display:none;" src="http://nc-tsa.org/ajax-loader.gif"/>
 
-				    <input id="fromName" type="text" name="fromName" placeholder="YOUR NAME" value="">
-				    
-				    <input id="fromEmail" type="text" name="fromEmail" placeholder="EMAIL ADDRESS" value="">
-				    			
-				    <input id="subject" type="text" name="subject" placeholder="SUBJECT" value="">
-				    
-				    <textarea rows="10" cols="40" id="message" name="message[body]" placeholder="MESSAGE"></textarea>
+	    <input type="submit" id="send" class="button" value="Send">
+	    
+	    <div id="contact_ajax_response"></div>
+	</form>
 
-				
-				    <input type="submit" class="button" value="Send">
-				</form>
-
-<!-- 			</div>
-		</div> -->
 	</section>
 <?php get_footer(); ?>

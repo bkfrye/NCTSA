@@ -134,6 +134,10 @@ add_action( 'wp_enqueue_scripts', 'nctsa_scripts' );
 *Add in validation and processing for ajax form
 */
 function contact_ajax(){
+
+	$email_to = "bfrye3@elon.edu";
+	$email_host = "bfrye3@elon.edu";
+
 	wp_verify_nonce( 'my-special-string', 'security' );
 	$fname = htmlspecialchars(stripslashes(trim($_POST['fname'])));
 	$email = htmlspecialchars(stripslashes(trim($_POST['email'])));
@@ -164,18 +168,34 @@ function contact_ajax(){
 		die();
 	} else {
  
-		
-		$email_message  = "<strong>Name:</strong> $fname<br/>";
-		$email_message .= "<strong>Email:</strong> $email<br/>";
-		$email_message .= "<strong>Phone:</strong> $subject<br/>";
-		$email_message .= "<strong>Message:</strong> $message<br/>";
+		function clean_string($string) {
+ 
+	      $bad = array("content-type","bcc:","to:","cc:","href");
+	      return str_replace($bad,"",$string);
+	    }
+
+		$email_message  = "From: " .clean_string($fname)."\n";
+		$email_message .= "Email: " .clean_string($email)."\n";
+		$email_message .= "Subject: " .clean_string($subject)."\n";
+		$email_message .= "Message: " .clean_string($message)."\n";
+
+		$subject = clean_string($subject);
+
+
+		$headers = 'From: '.$email_host."\r\n".
+ 
+		'Reply-To: '.$email."\r\n" ;
  
  
-		$mail_send = wp_mail( 'bfrye3@elon.edu', 'Your Web Contact Form', $email_message, 'no-reply@yourdomain.com' );
+		// $mail_send = wp_mail( 'bfrye3@elon.edu', $subject, $email_message, $email );
+
+		$mail_send = mail( $email_to, $subject, $email_message, $headers );
+
+
 		
  
 		if($mail_send){
-			echo json_encode("<div class='form_success'>Success! We will get back with you as soon as possible.</div><script>$('#contact')[0].reset();</script>");
+			echo json_encode("<div class='form_success'>Success! We will get back with you as soon as possible.</div><script>$('#contact-form')[0].reset();</script>");
 			die();
 		}
 	}

@@ -16,10 +16,10 @@ Template Name: Contact
 				    <input id="email" type="text" name="email" placeholder="EMAIL ADDRESS" value="">		
 				    <input id="subject" type="text" name="subject" placeholder="SUBJECT" value="">
 				    <textarea rows="10" cols="40" id="message" name="message" placeholder="MESSAGE"></textarea>
-				
+				<img id="contact_ajax" style="float:left; display:none;" src="http://nc-tsa.org/ajax-loader.gif"/>
 
 				    <input type="submit" id="send" class="button" value="Send">
-				    <img id="contact_ajax" style="float:left; margin:10px; display:none;" src="<?php bloginfo('template_directory');?>/img/ajax-loader.gif"/>
+				    
 				    <div id="contact_ajax_response"></div>
 				</form>
 
