@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
         
     }
     
-    $('#contact').submit( function(){
+    $('#contact-form').submit( function(){
         $('#contact_ajax').show();
         $("#contact_ajax_response").html('');
         contact_ajax();

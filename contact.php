@@ -19,12 +19,15 @@ Template Name: Contact
 				
 
 				    <input type="submit" id="send" class="button" value="Send">
+				    <img id="contact_ajax" style="float:left; margin:10px; display:none;" src="<?php bloginfo('template_directory');?>/img/ajax-loader.gif"/>
 				    <div id="contact_ajax_response"></div>
 				</form>
 
 			</div>
 		</div>
 	</section>
-
+<?php wp_footer();?>
+</body>
+</html>
 
 	

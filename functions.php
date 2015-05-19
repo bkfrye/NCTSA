@@ -115,7 +115,7 @@ function nctsa_scripts() {
 
 	wp_enqueue_script( 'ajax', get_template_directory_uri() . '/js/ajax.js', $deps, $ver, true);
   	wp_localize_script( 'ajax', 'MyAjax', array(
-    // URL to wp-admin/admin-ajax.php to process data
+    // URL to wp-admin/ajax.php to process data
     'ajaxurl' => admin_url( 'admin-ajax.php' ),
  
     // Creates a random string to test against for security purposes
@@ -127,6 +127,68 @@ function nctsa_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'nctsa_scripts' );
+
+
+
+/**
+*Add in validation and processing for ajax form
+*/
+function contact_ajax(){
+	wp_verify_nonce( 'my-special-string', 'security' );
+	$fname = htmlspecialchars(stripslashes(trim($_POST['fname'])));
+	$email = htmlspecialchars(stripslashes(trim($_POST['email'])));
+	$subject = htmlspecialchars(stripslashes(trim($_POST['subject'])));
+	$message = htmlspecialchars(stripslashes(trim($_POST['message'])));
+	
+	$errors = array();
+	if(strlen($fname) < 1){
+		$errors[] = "Please Enter Your Name";
+	}
+	if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
+	
+	} else {
+		$errors[] = "Please Enter A Valid Email";
+	}
+	
+	if(strlen($subject) < 1){
+		$errors[] = "Please Enter a Subject";
+	}
+	
+	if($errors){
+		$error_encode = "<div class='form_errors'>";
+		foreach($errors as $error){
+			$error_encode .= "$error<br/>";
+		}
+		$error_encode .= "</div>";
+		echo json_encode("$error_encode");
+		die();
+	} else {
+ 
+		
+		$email_message  = "<strong>Name:</strong> $fname<br/>";
+		$email_message .= "<strong>Email:</strong> $email<br/>";
+		$email_message .= "<strong>Phone:</strong> $subject<br/>";
+		$email_message .= "<strong>Message:</strong> $message<br/>";
+ 
+ 
+		$mail_send = wp_mail( 'bfrye3@elon.edu', 'Your Web Contact Form', $email_message, 'no-reply@yourdomain.com' );
+		
+ 
+		if($mail_send){
+			echo json_encode("<div class='form_success'>Success! We will get back with you as soon as possible.</div><script>$('#contact')[0].reset();</script>");
+			die();
+		}
+	}
+	
+	
+}
+ 
+add_action( 'wp_ajax_contact_ajax', 'contact_ajax' );
+add_action( 'wp_ajax_nopriv_contact_ajax', 'contact_ajax' );
+
+
+
+
 
 /**
  * Implement the Custom Header feature.
