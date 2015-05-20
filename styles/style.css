@@ -8,9 +8,16 @@ html {
   height: 100%; }
 
 body {
-  height: 100%;
   background-color: #fbf5f3;
   color: #484a47; }
+
+@media only screen and (min-width: 64em) {
+  #main {
+    min-height: 850px; } }
+
+@media only screen and (min-width: 64em) {
+  #main {
+    min-height: 875px; } }
 
 h1, h2, h3, h4, p, a {
   font-family: "Oxygen", sans-serif; }
@@ -18,12 +25,11 @@ h1, h2, h3, h4, p, a {
 p {
   font-weight: 300; }
 
-#main {
-  min-height: 100%; }
-  #main a:link, #main a:visited {
-    color: #00457c; }
-  #main a:hover, #main a:active {
-    color: #bc2640; }
+#main a:link, #main a:visited {
+  color: #00457c; }
+
+#main a:hover, #main a:active {
+  color: #bc2640; }
 
 .comments-link {
   display: none; }
